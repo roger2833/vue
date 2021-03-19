@@ -1,0 +1,10 @@
+
+.inputText {
+    margin : 0 auto;
+    width: 800px;
+}
+
+.inputText > input {
+  width: 100%;
+  font-size: 35px;
+}

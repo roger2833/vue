@@ -1,0 +1,10 @@
+<div class="toDoListItem d-f mt-1 pad-item bdr-1">
+    <div class="todoItemContent d-f">
+            <input type="checkbox" :id="'checkbox' + this.index" v-model="complete">
+            <label :for="'checkbox' + this.index"></label>
+            <span class="pl-1 gg">{{todo.content}}</span>
+    </div>
+    <div class="btnDanger">
+        <button class="btn btn-danger" @click="destroyHandler"><font-awesome-icon icon="times" /></button>
+    </div>
+</div>

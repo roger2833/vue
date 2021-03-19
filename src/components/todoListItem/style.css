@@ -1,0 +1,93 @@
+.toDoListItem {
+    background: #ffffff;
+}
+
+.mt-1 {
+    margin-top: 10px;
+}
+
+.mr-1{
+    margin-right: 10px;
+}
+
+.pl-1{
+    padding-left: 10px;
+}
+
+.d-f {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+}
+
+.pad-item {
+    padding: 20px 10px;
+}
+
+.btn-danger {
+    color: #850000;
+    font-size: 25px;
+}
+
+.btn-danger:hover {
+    color: #FF1C1C;
+}
+
+.bdr-1 {
+    border-radius: 10px;
+}
+
+.todoItemContent > input {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #333;
+    position: relative;
+}
+
+label::after {
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    cursor: pointer;
+    position: absolute;
+    content: '';
+    opacity: 0;
+}
+
+input:checked+label::after {
+    border: 3px solid #ffffff;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 20px;
+    height: 10px;
+    top: 50%;
+    margin-top: -8px;
+    left: 50%;
+    margin-left: -10px;
+    opacity: 1.0;
+}
+
+input:checked+label{
+    background-color: green;
+}
+/* [class~="", class*=""] */
+input:checked ~ span[class~="gg"]{
+    text-decoration: line-through;
+    color:#D3D3D3;
+}
+
